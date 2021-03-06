@@ -1,7 +1,5 @@
-setwd("C:\\Users\\dyoon\\Documents\\Projects\\R Programming\\Exploratory Data Analysis\\Wk 1\\exdata_data_household_power_consumption")
-
 #read file
-file <- read.table("household_power_consumption.txt", sep = ";", header = TRUE)
+file <- read.table("./household_power_consumption.txt", sep = ";", header = TRUE)
 
 #change data types for Date & Global_active_power
 file$Date <- strptime(file$Date, "", format = "%d/%m/%Y")
