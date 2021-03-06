@@ -1,7 +1,5 @@
-setwd("C:\\Users\\dyoon\\Documents\\Projects\\R Programming\\Exploratory Data Analysis\\Wk 1\\exdata_data_household_power_consumption")
-
 #read file
-file <- read.table("household_power_consumption.txt", sep = ";", header = TRUE)
+file <- read.table("./household_power_consumption.txt", sep = ";", header = TRUE)
 
 #subset for 2007-02-01 & 2007-02-02
 feb <- subset(file, Date == "1/2/2007" | Date == "2/2/2007")
